@@ -275,7 +275,8 @@ button {
 }
 
 .lead-light {
-  color: rgba(43, 36, 64, .75);
+  color: var(--ink);
+  opacity: .75;
 }
 
 
