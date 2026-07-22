@@ -165,7 +165,7 @@ function initLightbox() {
     });
 
     function showModalImage() {
-      modal.style.display = "block";
+      modal.style.display = "flex";
       modal.offsetWidth;
       modal.classList.add("show");
       modalImg.src = currentGalleryImages[currentIndex].src;
