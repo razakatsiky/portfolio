@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tsiky Ny Aina Razakambololona — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#accueil">TNA<span class="dot">.</span></a>
+
+      <nav class="navlinks" id="navlinks">
+        <a href="#accueil" data-target="accueil">Accueil</a>
+        <a href="#apropos" data-target="apropos">À propos</a>
+        <a href="#competences" data-target="competences">Compétences</a>
+        <a href="#projets" data-target="projets">Projets</a>
+        <a href="#formation" data-target="formation">Formation</a>
+        <a class="btn-nav" href="#contact" data-target="contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--ink)" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="2" width="8" height="8" rx="2.5" />
+          <rect x="2" y="14" width="8" height="8" rx="2.5" />
+          <rect x="14" y="14" width="8" height="8" rx="2.5" />
+          <rect x="15.17" y="3.17" width="5.66" height="5.66" rx="1.5" transform="rotate(45 18 6)" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ACCUEIL -->
+    <section class="section bg-lavender" id="accueil">
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <p class="kicker">Portfolio</p>
+          <h1 class="hero-title">Bienvenue ! </h1>
+          <p class="hero-sub">Merci d'avoir pris le temps de consulter mon portfolio ! Je suis ravie de partager mon
+            univers avec vous.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="src/CV_Tsiky.pdf" download="CV_Tsiky_Ny_Aina.pdf">Télécharger mon CV</a>
+            <a class="btn btn-ghost" href="#contact">Me contacter</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <img src="images/sariko.jpg" alt="Photo de Tsiky Ny Aina" class="hero-img">
+          <span class="floaty f1">✦</span>
+          <span class="floaty f2">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- A PROPOS -->
+    <section class="section bg-sky" id="apropos">
+      <div class="wrap about-grid">
+        <div class="about-visual reveal">
+          <div class="blob-card card-sky profile-card">
+            <div class="profile-header">
+              <h3 class="profile-name">RAZAKAMBOLOLONA<br>Tsiky Ny Aina</h3>
+              <p class="profile-subtitle">Née le 03 août 2006</p>
+            </div>
+            <ul class="profile-details">
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+                <span>Lot II L 55 Alasora Idoho</span>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" />
+                </svg>
+                <a href="mailto:tsikyrazakambololona@gmail.com">tsikyrazakambololona@gmail.com</a>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.5-1-1-1H4c-.6 0-1 .5-1 1 0 9.4 7.6 17 17 17 .6 0 1-.5 1-1v-3.5c0-.5-.4-1-1-1z" />
+                </svg>
+                <a href="tel:0348186655">034 81 866 55</a>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.27-3.82c.14-.4.52-.68.96-.68h9.54c.42 0 .8.28.94.68L19 11H5z" />
+                </svg>
+                <span>Permis B</span>
+              </li>
+            </ul>
+            <div class="profile-actions">
+              <a class="profile-btn" href="https://github.com/razakatsiky/" target="_blank" rel="noopener">
+                <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6 3C4.34315 3 3 4.34315 3 6V15H21V6C21 4.34315 19.6569 3 18 3H6ZM5 6C5 5.44772 5.44772 5 6 5H18C18.5523 5 19 5.44772 19 6V15H5V6Z" />
+                  <path
+                    d="M2.5 16H21.5L23.4 19.8C23.8 20.6 23.2 21.5 22.3 21.5H1.7C0.8 21.5 0.2 20.6 0.6 19.8L2.5 16Z" />
+                </svg>
+                GitHub</a>
+              <a class="profile-btn" href="https://www.linkedin.com/in/tsiky-ny-aina" target="_blank" rel="noopener">
+                <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round"
+                  style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+                LinkedIn</a>
+              <a class="profile-btn" href="src/CV_Tsiky.pdf" download="CV_Tsiky_Ny_Aina.pdf">
+                <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round"
+                  style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Mon CV</a>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="kicker">À propos</p>
+          <h2 class="section-title">Hello, I'm Tsiky !</h2>
+          <p class="lead">Je suis une web designer passionnée par l’UI/UX design, créative et curieuse, avec l’envie de
+            concevoir des expériences digitales simples, intuitives et impactantes.</p>
+          <p class="lead">J’aime transformer les idées et les besoins des utilisateurs en interfaces modernes, claires
+            et agréables à utiliser.</p>
+          <p class="lead">Rigoureuse et attentive aux détails, je crée des designs qui allient esthétique,
+            fonctionnalité et expérience utilisateur.</p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section class="section bg-mint" id="competences">
+      <div class="wrap">
+        <p class="kicker">Compétences</p>
+        <h2 class="section-title">Ce que je sais faire</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card card-mint reveal">
+            <h3>Logiciels</h3>
+            <div class="chip-row">
+              <span class="chip">Fg</span><span class="chip">Ps</span><span class="chip">Ai</span>
+              <span class="chip">Xd</span><span class="chip">Id</span><span class="chip">Vs</span>
+            </div>
+          </div>
+          <div class="skill-card card-peach reveal">
+            <h3>Code</h3>
+            <div class="code-details">
+              <div class="code-group">
+                <strong class="code-group-title">Langages</strong>
+                <span class="code-group-items">HTML5 • CSS3 • JavaScript • Java</span>
+              </div>
+              <div class="code-group">
+                <strong class="code-group-title">Frameworks &amp; tech</strong>
+                <span class="code-group-items">Vue.js • Node.js • Servlet • Spring Boot</span>
+              </div>
+              <div class="code-group">
+                <strong class="code-group-title">Bases de données</strong>
+                <span class="code-group-items">MySQL • PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card card-butter reveal">
+            <h3>Savoir-faire</h3>
+            <div class="tag-row">
+              <span class="tag tag-design">UI/UX Design</span>
+              <span class="tag tag-design">Maquettes web/mobile</span>
+              <span class="tag tag-design">Prototypage interactif</span>
+              <span class="tag tag-design">Affiches</span>
+              <span class="tag tag-design">Packaging</span>
+              <span class="tag tag-design">Brandboard</span>
+              <span class="tag tag-design">Charte graphique</span>
+              <span class="tag tag-design">Identité visuelle</span>
+              <span class="tag tag-dev">Conception &amp; dév web</span>
+              <span class="tag tag-dev">Intégration front-end</span>
+              <span class="tag tag-dev">Développement back-end</span>
+            </div>
+          </div>
+          <div class="skill-card card-apricot reveal">
+            <h3>Langues</h3>
+            <div class="language-list">
+              <div class="lang-item">
+                <div class="lang-info">
+                  <span>Malgache</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 100%;"></div>
+                </div>
+              </div>
+              <div class="lang-item">
+                <div class="lang-info">
+                  <span>Français</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div class="lang-item">
+                <div class="lang-info">
+                  <span>Anglais</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 75%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section bg-white" id="projets">
+      <div class="wrap">
+        <p class="kicker">Projets</p>
+        <h2 class="section-title">Une sélection de projets</h2>
+
+        <div class="projects-grid">
+
+          <article class="proj-card card-lavender reveal">
+            <div>
+              <p class="card-label">Identité visuelle — Cosmétique</p>
+              <p class="card-text">Conception d’une identité de marque à travers un champ sémantique, des moodboards,
+                des propositions de logo, des affiches de test et un brand board.</p>
+            </div>
+          </article>
+
+          <article class="proj-card card-sky reveal">
+            <div>
+              <p class="card-label">Site e-commerce — Vélos</p>
+              <p class="card-text">Conception des interfaces principales (login, accueil, modèles, caractéristiques,
+                accessoires, contact) avec Adobe XD, axée sur l’UX et l’ergonomie.</p>
+            </div>
+          </article>
+
+          <article class="proj-card card-mint reveal">
+            <div>
+              <p class="card-label">Identité visuelle — Logo &amp; Pack</p>
+              <p class="card-text">Création d’un univers graphique complet incluant la conception du logo, le design
+                visuel et la réalisation du packaging pour l'image de marque.</p>
+            </div>
+          </article>
+
+          <article class="proj-card card-peach reveal">
+            <div>
+              <p class="card-label">Projet d’affiches — Communication</p>
+              <p class="card-text">Création d’affiches destinées à transmettre un message visuel fort, en travaillant la
+                composition, la hiérarchie et l’impact graphique.</p>
+            </div>
+          </article>
+
+          <article class="proj-card card-butter reveal">
+            <div>
+              <p class="card-label">Gestion d'inventaire — Snipe-IT</p>
+              <p class="card-text"><strong>Vue.js • Snipe-IT API • Node.js • MySQL</strong><br>Développement d'une
+                plateforme d'inventaire connectée à l'API Snipe-IT (vue Kanban, tickets, coûts et import).</p>
+            </div>
+          </article>
+
+          <article class="proj-card card-apricot reveal">
+            <div>
+              <p class="card-label">Gestion des forages</p>
+              <p class="card-text"><strong>Spring Boot • JSP • MySQL</strong><br>Plateforme de gestion de demandes de
+                forage avec un espace client (suivi) et administrateur (CRUD, devis, alertes).</p>
+            </div>
+          </article>
+
+          <article class="proj-card card-coral reveal">
+            <div>
+              <p class="card-label">E-commerce — Vente de vaisselle</p>
+              <p class="card-text"><strong>Java Servlet • PostgreSQL</strong><br>Développement d’une boutique e-commerce
+                avec gestion complète du catalogue (CRUD produits), des remises, des filtres et du panier.</p>
+            </div>
+          </article>
+
+          <article class="proj-card card-blush reveal">
+            <div>
+              <p class="card-label">Admin E-commerce — Aigle d'Or</p>
+              <p class="card-text"><strong>Spring Boot • MySQL</strong><br>Développement d'un espace d'administration
+                e-commerce permettant la gestion des produits et le suivi des ventes en magasin.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section class="section bg-peach" id="formation">
+      <div class="wrap formation-grid">
+        <div class="reveal">
+          <p class="kicker">Formation</p>
+          <h2 class="section-title">Parcours académique</h2>
+          <div class="timeline">
+            <div class="t-item">
+              <span class="dot-mark">✦</span>
+              <div>
+                <h4><span class="yr">2023 - aujourd’hui</span>Licence en design et communication digitale</h4>
+                <p>IT-University Andoharanofotsy</p>
+              </div>
+            </div>
+            <div class="t-item">
+              <span class="dot-mark">✦</span>
+              <div>
+                <h4><span class="yr">Août 2023</span>Formation en robotique</h4>
+                <p>Innovation Campus</p>
+              </div>
+            </div>
+            <div class="t-item">
+              <span class="dot-mark">✦</span>
+              <div>
+                <h4><span class="yr">2022 - 2023</span>BACC Série D</h4>
+                <p>LSFX Antanimena</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <p class="kicker">Expérience &amp; activités</p>
+          <h2 class="section-title">En pratique</h2>
+          <div class="timeline">
+            <div class="t-item">
+              <span class="dot-mark">✦</span>
+              <div>
+                <h4><span class="yr">Oct. 2025 - aujourd’hui</span>Graphiste</h4>
+                <p><strong> The best part of me</strong> — Page de partage regroupant des versets, des pensées et des
+                  informations inspirantes.</p>
+              </div>
+            </div>
+            <!-- <div class="t-item">
+              <span class="dot-mark">✦</span>
+              <div>
+                <h4><span class="yr">Fév. 2025 - aujourd’hui</span>Graphiste</h4>
+                <p><strong>Proud association</strong> — Association aidant les jeunes lycéens pour leur orientation.</p>
+              </div>
+            </div> -->
+            <div class="t-item">
+              <span class="dot-mark">✦</span>
+              <div>
+                <h4><span class="yr">Mars 2025 - Mai 2025</span>Consultant designer</h4>
+                <p><strong>NEO Consulting and Solutions (Client : ESC)</strong> — Conception de maquettes digitales pour
+                  sites web et applications, centrées sur l’expérience utilisateur à l’aide de Figma.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section bg-coral" id="contact">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <p class="kicker kicker-light">Contact</p>
+          <h2 class="section-title title-light" style="white-space: nowrap;">On travaille ensemble ?</h2>
+          <p class="lead lead-light">Une idée, un projet, une simple question —<br>écrivez-moi, je réponds toujours.</p>
+          <ul class="contact-list">
+            <li>
+              <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+              </svg>
+              <a href="https://www.google.com/maps?q=18°57'45.3%22S+47°34'33.6%22E" target="_blank" rel="noopener">Lot
+                II L 55 Alasora Idoho, Madagascar</a>
+            </li>
+            <li>
+              <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;">
+                <path
+                  d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" />
+              </svg>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tsikyrazakambololona@gmail.com" target="_blank"
+                rel="noopener">tsikyrazakambololona@gmail.com</a>
+            </li>
+            <li>
+              <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;">
+                <path
+                  d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.5-1-1-1H4c-.6 0-1 .5-1 1 0 9.4 7.6 17 17 17 .6 0 1-.5 1-1v-3.5c0-.5-.4-1-1-1z" />
+              </svg>
+              <a href="tel:0348186655">034 81 866 55</a>
+            </li>
+            <li>
+              <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6 3C4.34315 3 3 4.34315 3 6V15H21V6C21 4.34315 19.6569 3 18 3H6ZM5 6C5 5.44772 5.44772 5 6 5H18C18.5523 5 19 5.44772 19 6V15H5V6Z" />
+                <path d="M2.5 16H21.5L23.4 19.8C23.8 20.6 23.2 21.5 22.3 21.5H1.7C0.8 21.5 0.2 20.6 0.6 19.8L2.5 16Z" />
+              </svg>
+              <a href="https://github.com/razakatsiky" target="_blank" rel="noopener">github.com/razakatsiky</a>
+            </li>
+            <li>
+              <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round"
+                style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              <a href="https://www.linkedin.com/in/tsiky-ny-aina" target="_blank"
+                rel="noopener">linkedin.com/in/tsiky-ny-aina</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xlgqwrbv" method="POST">
+          <label>Nom
+            <input type="text" name="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+          <label>Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-solid btn-dark">Envoyer</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Tsiky Ny Aina Razakambololona</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
