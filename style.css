@@ -84,8 +84,6 @@ button {
 .section {
   padding: 110px 0;
   position: relative;
-  content-visibility: auto;
-  contain-intrinsic-size: 1000px;
 }
 
 
@@ -257,6 +255,15 @@ button {
   margin-bottom: 22px;
 }
 
+.subsection-title {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 26px;
+  color: var(--ink);
+  text-align: center;
+}
+
 .title-light {
   color: var(--ink);
 }
@@ -330,6 +337,7 @@ button {
   font-size: 1.6rem;
   animation: float 5s ease-in-out infinite;
   pointer-events: none;
+  z-index: -1;
 }
 
 .f1 {
@@ -365,8 +373,14 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 24px 40px -26px rgba(43, 36, 64, .25);
+  box-shadow: 0 8px 32px 0 rgba(43, 36, 64, 0.1);
   transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .proj-card {
@@ -376,10 +390,16 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 24px 40px -26px rgba(43, 36, 64, .25);
+  box-shadow: 0 8px 32px 0 rgba(43, 36, 64, 0.1);
   transition: transform .3s var(--ease), box-shadow .3s var(--ease);
   overflow-wrap: break-word;
   word-wrap: break-word;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .blob-card:hover,
@@ -408,43 +428,39 @@ button {
 }
 
 .card-lavender {
-  background: var(--lavender);
   color: var(--lavender-ink);
 }
 
 .card-sky {
-  background: var(--sky);
   color: var(--sky-ink);
 }
 
 .card-mint {
-  background: var(--mint);
   color: var(--mint-ink);
 }
 
 .card-peach {
-  background: var(--peach);
   color: var(--peach-ink);
 }
 
 .card-butter {
-  background: var(--butter);
   color: var(--butter-ink);
 }
 
 .card-apricot {
-  background: var(--apricot);
   color: var(--apricot-ink);
 }
 
 .card-coral {
-  background: var(--coral);
   color: var(--coral-ink);
 }
 
 .card-blush {
-  background: var(--blush);
   color: var(--blush-ink);
+}
+
+.card-white {
+  color: var(--ink);
 }
 
 
@@ -475,9 +491,17 @@ button {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
-  max-width: 800px;
+  max-width: none;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -755,20 +779,32 @@ button {
 
 .reveal.in-view {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
+}
+
+/* Fix Glassmorphism vs Reveal bug: on désactive l'animation sur les cartes */
+.blob-card.reveal,
+.skill-card.reveal,
+.proj-card.reveal,
+.profile-card.reveal {
+  opacity: 1;
+  transform: none;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
 }
 
 
 .profile-card {
   padding: 34px 28px;
-  background: var(--sky);
   color: var(--ink);
   display: flex;
   flex-direction: column;
   gap: 24px;
   border-radius: var(--radius-lg);
-  box-shadow: 0 24px 48px -20px rgba(43, 36, 64, 0.18);
-  border: 1px solid rgba(43, 36, 64, 0.04);
+  box-shadow: 0 8px 32px 0 rgba(43, 36, 64, 0.1);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .profile-header {
@@ -869,11 +905,16 @@ button {
   .hero-grid,
   .about-grid,
   .formation-grid,
-  .contact-grid {
+  .contact-grid,
+  .services-grid {
     grid-template-columns: 1fr;
   }
 
   .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1314,8 +1355,13 @@ button {
   .blob-card,
   .proj-card,
   .skill-card,
-  .contact-form,
   .profile-card {
+    background: rgba(28, 25, 36, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .contact-form {
     box-shadow: 0 24px 40px -26px rgba(0, 0, 0, .6);
   }
 

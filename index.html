@@ -22,9 +22,8 @@
       <nav class="navlinks" id="navlinks">
         <a href="#accueil" data-target="accueil">Accueil</a>
         <a href="#apropos" data-target="apropos">À propos</a>
-        <a href="#competences" data-target="competences">Compétences</a>
-        <a href="#projets" data-target="projets">Projets IT</a>
-        <a href="#design" data-target="design">Design</a>
+        <a href="#expertise" data-target="expertise">Expertise</a>
+        <a href="#projets" data-target="projets">Projets</a>
         <a href="#formation" data-target="formation">Formation</a>
         <a class="btn-nav" href="#contact" data-target="contact">Contact</a>
       </nav>
@@ -52,7 +51,7 @@
             univers avec vous.</p>
           <div class="hero-actions">
             <a class="btn btn-solid" href="src/CV_Tsiky.pdf" download="CV_Tsiky_Ny_Aina.pdf">Télécharger mon CV</a>
-            <a class="btn btn-ghost" href="#contact">Me contacter</a>
+            <a class="btn btn-ghost" href="#projets">Voir mes projets</a>
           </div>
         </div>
         <div class="hero-visual reveal">
@@ -147,11 +146,49 @@
       </div>
     </section>
 
-    <!-- COMPETENCES -->
-    <section class="section bg-mint" id="competences">
+    <!-- EXPERTISE -->
+    <section class="section bg-mint" id="expertise">
       <div class="wrap">
-        <p class="kicker">Compétences</p>
-        <h2 class="section-title">Ce que je sais faire</h2>
+        <p class="kicker">Expertise</p>
+        <h2 class="section-title">Mes services & compétences</h2>
+
+        <h3 class="subsection-title">Ce que je peux faire pour vous</h3>
+        <div class="services-grid" style="margin-bottom: 70px;">
+          <div class="skill-card card-blush reveal">
+            <h3>UI/UX Design</h3>
+            <p class="card-text">Conception de maquettes intuitives, prototypage interactif, design centré sur l'expérience utilisateur et ergonomie.</p>
+            <div class="code-details">
+              <div class="code-group" style="margin-top: 15px;">
+                <strong class="code-group-title">Outils</strong>
+                <span class="code-group-items">Figma • Adobe XD • Illustrator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card card-lavender reveal">
+            <h3>Intégration &amp; Web Dev</h3>
+            <p class="card-text">Transformation de maquettes en sites web interactifs et responsives avec des technologies modernes.</p>
+            <div class="code-details">
+              <div class="code-group" style="margin-top: 15px;">
+                <strong class="code-group-title">Outils</strong>
+                <span class="code-group-items">HTML/CSS • Vue.js • Node.js • Java</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card card-white reveal">
+            <h3>Design Graphique</h3>
+            <p class="card-text">Création de logos, chartes graphiques, packagings et supports de communication visuelle impactants.</p>
+            <div class="code-details">
+              <div class="code-group" style="margin-top: 15px;">
+                <strong class="code-group-title">Outils</strong>
+                <span class="code-group-items">Photoshop • InDesign • Illustrator</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="subsection-title">Ma boîte à outils</h3>
 
         <div class="skills-grid">
           <div class="skill-card card-mint reveal">
@@ -159,18 +196,26 @@
             <div class="chip-row">
               <span class="chip">Fg</span><span class="chip">Ps</span><span class="chip">Ai</span>
               <span class="chip">Xd</span><span class="chip">Id</span><span class="chip">Vs</span>
+              <span class="chip">Gh</span>
             </div>
           </div>
           <div class="skill-card card-peach reveal">
-            <h3>Code</h3>
+            <h3>Langages Code</h3>
+            <div class="code-details">
+              <div class="code-group" style="margin-top: 15px;">
+                <span class="code-group-items">HTML5 • CSS3</span>
+                <span class="code-group-items" style="margin-top: 5px;">JavaScript • Java</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card card-butter reveal">
+            <h3>Frameworks &amp; Data</h3>
             <div class="code-details">
               <div class="code-group">
-                <strong class="code-group-title">Langages</strong>
-                <span class="code-group-items">HTML5 • CSS3 • JavaScript • Java</span>
-              </div>
-              <div class="code-group">
-                <strong class="code-group-title">Frameworks &amp; tech</strong>
-                <span class="code-group-items">Vue.js • Node.js • Servlet • Spring Boot</span>
+                <strong class="code-group-title">Tech</strong>
+                <span class="code-group-items">Vue.js • Node.js</span>
+                <span class="code-group-items">Servlet • Spring Boot</span>
               </div>
               <div class="code-group">
                 <strong class="code-group-title">Bases de données</strong>
@@ -178,7 +223,8 @@
               </div>
             </div>
           </div>
-          <div class="skill-card card-butter reveal">
+
+          <!-- <div class="skill-card card-butter reveal">
             <h3>Savoir-faire</h3>
             <div class="tag-row">
               <span class="tag tag-design">UI/UX Design</span>
@@ -193,7 +239,9 @@
               <span class="tag tag-dev">Intégration front-end</span>
               <span class="tag tag-dev">Développement back-end</span>
             </div>
-          </div>
+          </div> -->
+
+
           <div class="skill-card card-apricot reveal">
             <h3>Langues</h3>
             <div class="language-list">
@@ -227,13 +275,14 @@
       </div>
     </section>
 
-    <!-- PROJETS IT -->
+
+
+    <!-- PROJETS -->
     <section class="section bg-white" id="projets">
       <div class="wrap">
-        <p class="kicker">Projets Informatiques</p>
-        <h2 class="section-title">Une sélection de projets IT</h2>
-
-        <div class="projects-grid">
+        <p class="kicker">Mes Projets</p>
+        <h2 class="section-title">Projets IT</h2>
+        <div class="projects-grid" style="margin-bottom: 70px;">
 
           <article class="proj-card card-butter reveal">
             <div>
@@ -268,14 +317,8 @@
           </article>
 
         </div>
-      </div>
-    </section>
 
-    <!-- PROJETS DESIGN -->
-    <section class="section bg-lavender" id="design">
-      <div class="wrap">
-        <p class="kicker">Projets Design</p>
-        <h2 class="section-title">Mes créations visuelles</h2>
+        <h2 class="section-title" style="margin-top: 80px;">Projets Design</h2>
 
         <div class="design-showcase reveal">
           <div class="design-showcase-text">
@@ -288,79 +331,112 @@
             <img src="images/Lovasoa/ETU3637-S6-J4.jpg" alt="Lovasoa Brand Identity 1" loading="lazy" decoding="async">
             <img src="images/Lovasoa/ETU3637-S6-J42.jpg" alt="Lovasoa Brand Identity 2" loading="lazy" decoding="async">
             <img src="images/Lovasoa/ETU3637-S6-J43.jpg" alt="Lovasoa Brand Identity 3" loading="lazy" decoding="async">
-            
+
             <div class="more-images-wrapper">
-              <img src="images/Lovasoa/ETU3637-S6-J44.jpg" alt="Lovasoa Brand Identity 4" loading="lazy" decoding="async">
+              <img src="images/Lovasoa/ETU3637-S6-J44.jpg" alt="Lovasoa Brand Identity 4" loading="lazy"
+                decoding="async">
               <div class="more-images-overlay">+8 Voir plus</div>
             </div>
 
-            <img src="images/Lovasoa/ETU3637-S6-J45.jpg" alt="Lovasoa Brand Identity 5" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Lovasoa/ETU3637-S6-J46.jpg" alt="Lovasoa Brand Identity 6" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Lovasoa/ETU3637-S6-J47.jpg" alt="Lovasoa Brand Identity 7" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Lovasoa/ETU3637-S6-J48.jpg" alt="Lovasoa Brand Identity 8" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Lovasoa/ETU3637-S6-J49.jpg" alt="Lovasoa Brand Identity 9" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Lovasoa/ETU3637-S6-J410.jpg" alt="Lovasoa Brand Identity 10" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Lovasoa/ETU3637-S6-J411.jpg" alt="Lovasoa Brand Identity 11" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Lovasoa/ETU3637-S6-J412.jpg" alt="Lovasoa Brand Identity 12" loading="lazy" decoding="async" class="hidden-img">
+            <img src="images/Lovasoa/ETU3637-S6-J45.jpg" alt="Lovasoa Brand Identity 5" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Lovasoa/ETU3637-S6-J46.jpg" alt="Lovasoa Brand Identity 6" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Lovasoa/ETU3637-S6-J47.jpg" alt="Lovasoa Brand Identity 7" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Lovasoa/ETU3637-S6-J48.jpg" alt="Lovasoa Brand Identity 8" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Lovasoa/ETU3637-S6-J49.jpg" alt="Lovasoa Brand Identity 9" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Lovasoa/ETU3637-S6-J410.jpg" alt="Lovasoa Brand Identity 10" loading="lazy"
+              decoding="async" class="hidden-img">
+            <img src="images/Lovasoa/ETU3637-S6-J411.jpg" alt="Lovasoa Brand Identity 11" loading="lazy"
+              decoding="async" class="hidden-img">
+            <img src="images/Lovasoa/ETU3637-S6-J412.jpg" alt="Lovasoa Brand Identity 12" loading="lazy"
+              decoding="async" class="hidden-img">
           </div>
         </div>
 
-        <div class="design-showcase reveal" style="margin-top: 5rem; padding-top: 5rem; border-top: 2px dashed rgba(43, 36, 64, 0.1);">
+        <div class="design-showcase reveal"
+          style="margin-top: 5rem; padding-top: 5rem; border-top: 2px dashed rgba(43, 36, 64, 0.1);">
           <div class="design-showcase-text">
             <h3>Site e-commerce — Vélos</h3>
-            <p>Conception des interfaces principales (login, accueil, modèles, caractéristiques, accessoires, contact) avec Adobe XD, axée sur l’UX et l’ergonomie.</p>
+            <p>Conception des interfaces principales (login, accueil, modèles, caractéristiques, accessoires, contact)
+              avec Adobe XD, axée sur l’UX et l’ergonomie.</p>
           </div>
 
           <div class="design-gallery new-layout">
             <img src="images/Velo/Volohany.png" alt="Vélos Design Accueil" loading="lazy" decoding="async">
             <img src="images/Velo/Web 1920 – 1.png" alt="Vélos Design Login" loading="lazy" decoding="async">
             <img src="images/Velo/Web 1920 – 3.png" alt="Vélos Design Modèles" loading="lazy" decoding="async">
-            
+
             <div class="more-images-wrapper">
-              <img src="images/Velo/Web 1920 – 4.png" alt="Vélos Design Caractéristiques" loading="lazy" decoding="async">
+              <img src="images/Velo/Web 1920 – 4.png" alt="Vélos Design Caractéristiques" loading="lazy"
+                decoding="async">
               <div class="more-images-overlay">+13 Voir plus</div>
             </div>
 
-            <img src="images/Velo/Web 1920 – 5.png" alt="Vélos Design Accessoires" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Velo/Web 1920 – 6.png" alt="Vélos Design Panier" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Velo/Web 1920 – 7.png" alt="Vélos Design Checkout" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Velo/Web 1920 – 8.png" alt="Vélos Design Contact" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Velo/Web 1920 – 9.png" alt="Vélos Design" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Velo/Web 1920 – 10.png" alt="Vélos Design" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Velo/Web 1920 – 11.png" alt="Vélos Design" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Velo/Web 1920 – 12.png" alt="Vélos Design" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Velo/Web 1920 – 13.png" alt="Vélos Design" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Velo/Web 1920 – 14.png" alt="Vélos Design" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Velo/Web 1920 – 15.png" alt="Vélos Design" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Velo/Web 1920 – 16.png" alt="Vélos Design" loading="lazy" decoding="async" class="hidden-img">
-            <img src="images/Velo/Web 1920 – 17.png" alt="Vélos Design" loading="lazy" decoding="async" class="hidden-img">
+            <img src="images/Velo/Web 1920 – 5.png" alt="Vélos Design Accessoires" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Velo/Web 1920 – 6.png" alt="Vélos Design Panier" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Velo/Web 1920 – 7.png" alt="Vélos Design Checkout" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Velo/Web 1920 – 8.png" alt="Vélos Design Contact" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Velo/Web 1920 – 9.png" alt="Vélos Design" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Velo/Web 1920 – 10.png" alt="Vélos Design" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Velo/Web 1920 – 11.png" alt="Vélos Design" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Velo/Web 1920 – 12.png" alt="Vélos Design" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Velo/Web 1920 – 13.png" alt="Vélos Design" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Velo/Web 1920 – 14.png" alt="Vélos Design" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Velo/Web 1920 – 15.png" alt="Vélos Design" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Velo/Web 1920 – 16.png" alt="Vélos Design" loading="lazy" decoding="async"
+              class="hidden-img">
+            <img src="images/Velo/Web 1920 – 17.png" alt="Vélos Design" loading="lazy" decoding="async"
+              class="hidden-img">
           </div>
         </div>
 
-        <div class="design-showcase reveal" style="margin-top: 5rem; padding-top: 5rem; border-top: 2px dashed rgba(43, 36, 64, 0.1);">
+        <div class="design-showcase reveal"
+          style="margin-top: 5rem; padding-top: 5rem; border-top: 2px dashed rgba(43, 36, 64, 0.1);">
           <div class="design-showcase-text">
             <h3>Identité visuelle — Logo & Pack</h3>
-            <p>Création d’un univers graphique complet incluant la conception du logo, le design visuel et la réalisation du packaging pour l'image de marque.</p>
+            <p>Création d’un univers graphique complet incluant la conception du logo, le design visuel et la
+              réalisation du packaging pour l'image de marque.</p>
           </div>
 
           <div class="design-gallery new-layout">
             <img src="images/Packaging/NA.jpg" alt="Packaging NA" loading="lazy" decoding="async">
-            <img src="images/Packaging/TsarainaSigara.jpg" alt="Packaging Tsaraina Sigara" loading="lazy" decoding="async">
-            <img src="images/Packaging/Tracé paquet boston.png" alt="Tracé paquet boston" loading="lazy" decoding="async">
-            
+            <img src="images/Packaging/TsarainaSigara.jpg" alt="Packaging Tsaraina Sigara" loading="lazy"
+              decoding="async">
+            <img src="images/Packaging/Tracé paquet boston.png" alt="Tracé paquet boston" loading="lazy"
+              decoding="async">
+
             <div class="more-images-wrapper">
-              <img src="images/Packaging/TsarainaSigaraVolohany.jpg" alt="Packaging Tsaraina Sigara Volohany" loading="lazy" decoding="async">
+              <img src="images/Packaging/TsarainaSigaraVolohany.jpg" alt="Packaging Tsaraina Sigara Volohany"
+                loading="lazy" decoding="async">
               <div class="more-images-overlay">+1 Voir plus</div>
             </div>
 
-            <img src="images/Packaging/Capture d'écran 2026-07-22 193434.png" alt="Aperçu Packaging" loading="lazy" decoding="async" class="hidden-img">
+            <img src="images/Packaging/Capture d'écran 2026-07-22 193434.png" alt="Aperçu Packaging" loading="lazy"
+              decoding="async" class="hidden-img">
           </div>
         </div>
 
-        <div class="design-showcase reveal" style="margin-top: 5rem; padding-top: 5rem; border-top: 2px dashed rgba(43, 36, 64, 0.1);">
+        <div class="design-showcase reveal"
+          style="margin-top: 5rem; padding-top: 5rem; border-top: 2px dashed rgba(43, 36, 64, 0.1);">
           <div class="design-showcase-text">
             <h3>Projet d’affiches — Communication</h3>
-            <p>Création d’affiches destinées à transmettre un message visuel fort, en travaillant la composition, la hiérarchie et l’impact graphique.</p>
+            <p>Création d’affiches destinées à transmettre un message visuel fort, en travaillant la composition, la
+              hiérarchie et l’impact graphique.</p>
           </div>
 
           <div class="design-gallery new-layout">
@@ -446,7 +522,7 @@
           <h2 class="section-title title-light">On travaille ensemble ?</h2>
           <p class="lead lead-light">Une idée, un projet, une simple question —<br>écrivez-moi, je réponds toujours.</p>
           <ul class="contact-list">
-            <li>
+            <!-- <li>
               <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;">
@@ -454,6 +530,14 @@
               </svg>
               <a href="https://www.google.com/maps?q=18°57'45.3%22S+47°34'33.6%22E" target="_blank" rel="noopener">Lot
                 II L 55 Alasora Idoho, Madagascar</a>
+            </li> -->
+            <li>
+              <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+              </svg>
+              <a href="##" rel="noopener">Lot II L 55 Alasora Idoho, Madagascar</a>
             </li>
             <li>
               <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="currentColor"
