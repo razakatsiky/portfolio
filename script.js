@@ -1,4 +1,3 @@
-
 const navToggle = document.getElementById('navToggle');
 const navlinks = document.getElementById('navlinks');
 
@@ -254,9 +253,82 @@ function initExpandGallery() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function initPortfolioFilters() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filterValue = btn.getAttribute('data-filter');
+
+      portfolioItems.forEach(item => {
+        if (filterValue === 'all') {
+          item.classList.remove('hidden');
+        } else {
+          const categories = item.getAttribute('data-category') || '';
+          if (categories.split(' ').includes(filterValue)) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        }
+      });
+    });
+  });
+}
+
+function initProjectModals() {
+  const modal = document.getElementById('projectDetailModal');
+  const modalBody = document.getElementById('projectModalBody');
+  const backdrop = modal ? modal.querySelector('.project-modal-backdrop') : null;
+  const closeBtn = modal ? modal.querySelector('.project-modal-close') : null;
+  const cards = document.querySelectorAll('.project-card-thumb');
+
+  if (!modal || !modalBody) return;
+
+  const closeModal = () => {
+    modal.style.display = 'none';
+  };
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const projectId = card.getAttribute('data-project');
+      const projectSource = document.getElementById(projectId);
+
+      if (projectSource) {
+        modalBody.innerHTML = projectSource.innerHTML;
+        modal.style.display = 'flex';
+
+        initExpandGallery();
+        initLightbox();
+      }
+    });
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (backdrop) backdrop.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'flex') {
+      closeModal();
+    }
+  });
+}
+
+function initApp() {
   createStars();
   initForceDownloads();
   initLightbox();
   initExpandGallery();
-});
+  initPortfolioFilters();
+  initProjectModals();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
