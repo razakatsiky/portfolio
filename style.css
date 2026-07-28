@@ -1019,7 +1019,7 @@ button {
 
 
 .stars-bg {
-  position: fixed;
+  position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 1;
@@ -1320,6 +1320,91 @@ button {
   color: var(--coral-ink);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+
+  .hero-grid,
+  .about-grid,
+  .formation-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .navlinks {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .services-grid,
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .navlinks {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 253, 248, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(43, 36, 64, .08);
+  }
+
+  .navlinks.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .wrap {
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .hero-actions {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .hero-actions .btn {
+    padding: 12px 14px;
+    font-size: 0.8rem;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

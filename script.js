@@ -90,11 +90,11 @@ function createStars() {
   const container = document.createElement('div');
   container.className = 'stars-bg';
 
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 120; i++) {
     const star = document.createElement('div');
     star.className = 'star';
-    star.style.left = `${Math.random() * 100}vw`;
-    star.style.top = `${Math.random() * 100}vh`;
+    star.style.left = `${Math.random() * 100}%`;
+    star.style.top = `${Math.random() * 100}%`;
     star.style.animationDelay = `${Math.random() * 4}s`;
 
     star.innerHTML = `
@@ -107,11 +107,6 @@ function createStars() {
   }
 
   document.body.appendChild(container);
-
-  const navlinks = document.getElementById('navlinks');
-  if (navlinks) {
-    navlinks.appendChild(container.cloneNode(true));
-  }
 }
 
 
